@@ -417,111 +417,45 @@ html {
   .navbar .logo a {
     color: var(--secondary);
     font-weight: 800;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
+    font-size: 1.5rem;
+    margin: 3rem 1rem;
   }
   .navbar .logo a > span {
     color: var(--primary);
   }
   .navbar .navcont {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 2%; */
     display: none;
   }
-  /* .navbar .navcont .icon {
-    color: var(--secondary);
-    font-size: 2rem;
-    margin-right: 1rem; */
-  /* }
-  .navbar .navcont .iconcont {
-    color: var(--primary);
-    margin-bottom: 3rem;
-    margin-right: 2rem;
-    margin-top: 3rem;
-  } */
-  /* .navbar {
-    display: flex; */
-    align-items: center;
-    justify-content: space-between;
-    height: 2%;
-    border-bottom: 0.1px solid #f0eded;
-    
-  } */
 
   /* linkbar */
   .linkbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 16vh;
+    height: 12vh;
   }
   .linkbar .links ul {
     display: flex;
   }
-  .linkbar .dropdown {
-    position: relative;
-    display: inline-block;
-  }
   .linkbar .dropdown .dropbtn {
-    font-size: 1.5rem;
-    color: var(--secondary);
-    background-color: white;
-    cursor: pointer;
-    text-align: center;
-    padding-right: 1rem;
-  }
-  .linkbar .dropdown .dropdwn-cont {
-    position: absolute;
-    width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 3;
     display: none;
-  }
-  .linkbar .dropdown .dropdwn-cont a {
-    color: var(--primary);
-    background-color: var(--white);
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    border-bottom: 0.1px solid rgb(240, 237, 237);
-    text-align: left;
-    padding: 0.5rem 1rem;
-    margin-left: 1rem;
-  }
-  .linkbar .dropdown .dropdwn-cont a:hover {
-    color: var(--secondary);
-  }
-  .linkbar .dropdown:hover .dropdwn-cont {
-    display: block;
   }
 
   .linkbar .links ul li a {
     color: var(--primary);
     margin-right: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
   .linkbar ul li a:hover {
     color: var(--secondary);
   }
 
-  .linkbar span i {
-    color: var(--secondary);
-    margin-left: 1rem;
-    font-size: 1.3rem;
-  }
   .linkbar button {
     border: none;
     background-color: var(--secondary);
     color: var(--white);
     border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    margin-right: 1rem;
-    font-size: 1.1rem;
+    padding: 0.1rem 0.7rem;
+    margin-right: 0.4rem;
+    font-size: 0.7rem;
   }
 
   /* Slider */
