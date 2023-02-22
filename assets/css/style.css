@@ -16,12 +16,13 @@
   --secondary: #ff6600;
   --white: #ffffff;
   --gray: #6c9cd2;
+  --black: #000000;
 }
 html {
   scroll-behavior: smooth;
 }
 .container {
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -158,6 +159,7 @@ html {
 }
 .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
   font-size: 4.5rem;
@@ -216,7 +218,6 @@ html {
   color: var(--white);
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -299,7 +300,505 @@ html {
   font-weight: 800;
   word-spacing: 0.5rem;
 }
-.sign.sbgd img {
-  height: 100%;
+
+/* sign */
+.sign {
+  position: relative;
+}
+.sign .container {
+  background-image: url(/assets/img/signupimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.sign .bcover {
+  background: var(--black);
+  background-color: black;
+  opacity: 80%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.sign .container .side1 ul li i {
+  color: var(--secondary);
+}
+.sign .container .side1 {
+  width: 50%;
+  margin-left: 5%;
+  z-index: 10;
+}
+.sign .container .signup {
+  width: 30%;
+  margin-right: 5%;
+  z-index: 10;
+}
+.sign .container .side1 h3 {
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+}
+.sign .container .side1 h1 {
+  color: var(--white);
+  margin: 1.5rem 0;
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+.sign .container .side1 p {
+  color: var(--white);
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+.sign .container .side1 span {
+  color: var(--white);
+  margin-left: 1rem;
+}
+.sign .container .side1 ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.sign .container .signup h1 {
+  background-color: var(--white);
+  color: var(--primary);
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.sign .container .signup form {
+  background-color: var(--secondary);
+  display: block;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.sign .container .signup input {
+  border-radius: 0.3rem;
+  width: 23vw;
+  height: 8vh;
+  border: none;
+  text-align: left;
+}
+.sign .container .signup select {
+  border-radius: 0.3rem;
+  width: 23vw;
+  height: 8vh;
+  border: none;
+  text-align: left;
+}
+.sign .container .signup .f1 {
+  padding: 2rem 0rem 2rem 2rem;
+}
+.sign .container .signup .f2 {
+  padding: 0rem 0.5rem 2rem 2rem;
+}
+.sign .container .signup .f3 {
+  padding: 0rem 2rem 2rem 2rem;
+}
+.sign .container .signup button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0.5rem;
+  width: 23vw;
+  height: 8vh;
+  text-align: center;
+  padding: 0rem 0.5rem 2rem 2rem;
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin: 2rem 2rem 0rem 0rem;
+  padding-top: 0.5rem;
+}
+@media only screen and (max-width: 700px) {
+  .navbar .logo a {
+    color: var(--secondary);
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .navbar .logo a > span {
+    color: var(--primary);
+  }
+  .navbar .navcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 2%; */
+  }
+  .navbar .navcont .icon {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-right: 1rem;
+    /* margin-bottom: 3rem; */
+  }
+  .navbar .navcont .iconcont {
+    color: var(--primary);
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
+  .navbar {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    height: 2%;
+    border-bottom: 0.1px solid #f0eded;
+  }
+
+  /* linkbar */
+  .linkbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16vh;
+  }
+  .linkbar .links ul {
+    display: flex;
+  }
+  .linkbar .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .linkbar .dropdown .dropbtn {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    padding-right: 1rem;
+  }
+  .linkbar .dropdown .dropdwn-cont {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    display: none;
+  }
+  .linkbar .dropdown .dropdwn-cont a {
+    color: var(--primary);
+    background-color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    border-bottom: 0.1px solid rgb(240, 237, 237);
+    text-align: left;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+  }
+  .linkbar .dropdown .dropdwn-cont a:hover {
+    color: var(--secondary);
+  }
+  .linkbar .dropdown:hover .dropdwn-cont {
+    display: block;
+  }
+
+  .linkbar .links ul li a {
+    color: var(--primary);
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .linkbar ul li a:hover {
+    color: var(--secondary);
+  }
+
+  .linkbar span i {
+    color: var(--secondary);
+    margin-left: 1rem;
+    font-size: 1.3rem;
+  }
+  .linkbar button {
+    border: none;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* Slider */
+  .slider .swiper {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 2rem;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .scont {
+    color: var(--white);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.7rem;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
+    font-size: 2rem;
+    margin-bottom: 2.3rem;
+    line-height: 0.8rem;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--secondary);
+    font-size: 4rem;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .scont button {
+    border: none;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  /* about */
+  .about .container {
+    display: flex;
+  }
+  .about .abtcont {
+    margin-left: 3rem;
+  }
+  .about .abtimg img {
+    height: 60vh;
+    width: 30vw;
+    border-radius: 0.5rem;
+  }
+  .about .abtcont h4 {
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+  }
+  .about .abtcont h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-top: 0.7rem;
+    font-weight: 800;
+    word-spacing: 0.5rem;
+  }
+  .about .abtcont p {
+    color: var(--primary);
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  .about .abtcont button {
+    border: none;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  /* subjects */
+  .subjects h4 {
+    text-transform: uppercase;
+    color: var(--secondary);
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 8rem;
+  }
+  .subjects h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    word-spacing: 0.5rem;
+  }
+  .subjects .container .subinfo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .subjects .container .subinfo .subcont {
+    position: absolute;
+    top: 27%;
+    text-align: center;
+    color: var(--white);
+    left: 15%;
+  }
+  .subjects .container .subinfo .subcont h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+  }
+  .subjects .container .subinfo .subcont p {
+    font-weight: 600;
+  }
+  .subjects .container .subinfo {
+    position: relative;
+    height: 80%;
+  }
+  .subjects .container .subinfo .opac {
+    background-color: black;
+    opacity: 30%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 0.5rem;
+  }
+  .subjects .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem 2rem;
+  }
+
+  /* courses */
+  .courses .container h4 {
+    text-transform: uppercase;
+    color: var(--secondary);
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .courses .container h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    word-spacing: 0.5rem;
+  }
+
+  /* sign */
+  .sign {
+    position: relative;
+  }
+  .sign .container {
+    background-image: url(/assets/img/signupimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .sign .bcover {
+    background: var(--black);
+    background-color: black;
+    opacity: 80%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .sign .container .side1 ul li i {
+    color: var(--secondary);
+  }
+  .sign .container .side1 {
+    width: 50%;
+    margin-left: 5%;
+    z-index: 10;
+  }
+  .sign .container .signup {
+    width: 30%;
+    margin-right: 5%;
+    z-index: 10;
+  }
+  .sign .container .side1 h3 {
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1.3rem;
+  }
+  .sign .container .side1 h1 {
+    color: var(--white);
+    margin: 1.5rem 0;
+    font-weight: 700;
+    font-size: 2.7rem;
+  }
+  .sign .container .side1 p {
+    color: var(--white);
+    margin: 2rem 0;
+    font-size: 1.2rem;
+  }
+  .sign .container .side1 span {
+    color: var(--white);
+    margin-left: 1rem;
+  }
+  .sign .container .side1 ul li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .sign .container .signup h1 {
+    background-color: var(--white);
+    color: var(--primary);
+    font-size: 2.5rem;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+  .sign .container .signup form {
+    background-color: var(--secondary);
+    display: block;
+    border-radius: 0rem 0rem 1rem 1rem;
+  }
+  .sign .container .signup input {
+    border-radius: 0.3rem;
+    width: 23vw;
+    height: 8vh;
+    border: none;
+    text-align: left;
+  }
+  .sign .container .signup select {
+    border-radius: 0.3rem;
+    width: 23vw;
+    height: 8vh;
+    border: none;
+    text-align: left;
+  }
+  .sign .container .signup .f1 {
+    padding: 2rem 0rem 2rem 2rem;
+  }
+  .sign .container .signup .f2 {
+    padding: 0rem 0.5rem 2rem 2rem;
+  }
+  .sign .container .signup .f3 {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .sign .container .signup button {
+    background-color: var(--primary);
+    border: none;
+    border-radius: 0.5rem;
+    width: 23vw;
+    height: 8vh;
+    text-align: center;
+    padding: 0rem 0.5rem 2rem 2rem;
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin: 2rem 2rem 0rem 0rem;
+    padding-top: 0.5rem;
+  }
 }

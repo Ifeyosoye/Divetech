@@ -23,7 +23,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
     <!-- custom css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
@@ -61,7 +60,6 @@
         </div>
       </div>
     </section>
-
     <!-- linkbar -->
     <section class="linkbar">
       <div class="dropdown">
@@ -233,41 +231,63 @@
 
     <!-- sign up -->
     <section class="sign">
-      <div class="sbgd">
-        <img src="/assets/img/signupimg.jpg" alt="signup_img" />
-      </div>
+      <div class="bcover"></div>
       <div class="container">
-        <h3>need any courses</h3>
-        <h1>30% Off For New Students</h1>
-        <p>
-          Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor
-          lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo
-          sed sed diam. Ea et erat ut sed diam sea ipsum est dolor
-        </p>
-        <ul>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>Labore eos amet dolor
-            amet diam
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>Etsea et sit dolor
-            amet ipsum
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i>Diam dolor diam
-            elitripsum vero.
-          </li>
-        </ul>
+        <div class="side1">
+          <h3>need any courses</h3>
+          <h1>30% Off For New Students</h1>
+          <p>
+            Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
+            dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat
+            justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor
+          </p>
+          <ul>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i
+              ><span>Labore eos amet dolor amet diam</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i
+              ><span>Etsea et sit dolor amet ipsum</span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i
+              ><span>Diam dolor diam elitripsum vero.</span>
+            </li>
+          </ul>
+        </div>
         <div class="signup">
           <h1>Sign Up Now</h1>
           <form action="">
-            <input type="text" name="name" id="name" placeholder="Your name" />
-            <input type="email" name="mail" id="mail" placeholder="Your email" />
-            <select name="select_cr" id="select_cr">
+            <div class="f1 fm">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="f2 fm">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Your email"
+              />
+            </div>
+            <div class="f3 fm">
+              <select name="select_cr" id="select_cr">
+                <option value="" selected="false" disabled>
+                  Select a course
+                </option>
                 <option value="">Mathematics</option>
                 <option value="">English</option>
                 <option value="">Chemistry</option>
-            </select>
+              </select>
+              <br />
+              <button>Sign Up now</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
