@@ -442,11 +442,15 @@ html {
     display: none;
   }
 
+  /* .linkbar .links ul li:last-child{
+    /* margin-right: 0; */
+  
   .linkbar .links ul li a {
     color: var(--primary);
-    margin-right: .1rem;
-    font-size: 1rem;
+    margin-right: .7rem;
+    font-size: .8rem;
     font-weight: 600;
+    text-align: left;
   }
   .linkbar ul li a:hover {
     color: var(--secondary);
@@ -505,15 +509,16 @@ html {
 
   /* about */
   .about .container {
-    display: flex;
+    display: block;
   }
   .about .abtcont {
     margin-left: 1rem;
   }
   .about .abtimg img {
     height: 30vh;
-    width: 30vw;
+    width: 80%;
     border-radius: 0.5rem;
+    margin: rem auto;
   }
   .about .abtcont h4 {
     color: var(--secondary);
