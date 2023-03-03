@@ -442,12 +442,14 @@ html {
 
   .linkbar .links ul li a {
     color: var(--primary);
-    margin-right: 1rem;
+    margin-right: .5rem;
     font-size: 0.9rem;
     font-weight: 600;
+    padding: 1rem 0rem;
   }
   .linkbar ul li a:hover {
     color: var(--secondary);
+    background-color: var(--primary);
   }
 
   .linkbar button {
@@ -482,8 +484,9 @@ html {
     left: 10%;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
-    font-size: .9rem;
+    font-size: .75rem;
     margin-bottom: .1rem;
+    word-spacing: .2rem;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
     font-size: 2rem;
