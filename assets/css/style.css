@@ -154,16 +154,18 @@ html {
 .slider .swiper .swiper-wrapper .swiper-slide .scont {
   color: var(--white);
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
 }
 .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: .7rem;
 }
 .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
   font-size: 4.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
+  width:62% ;
+  line-height: 1 ;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--secondary);
@@ -480,13 +482,14 @@ html {
     left: 10%;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: .9rem;
+    margin-bottom: .1rem;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    line-height: 0.8rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    width: 90% ;
+    line-height: 1.3 ;
   }
   .swiper-pagination-bullet-active {
     background-color: var(--secondary);
@@ -497,9 +500,9 @@ html {
     background-color: var(--secondary);
     color: var(--white);
     border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    margin-right: 1rem;
-    font-size: 1.1rem;
+    padding: 0.4rem 1.3rem;
+    margin-right: none;
+    font-size: .9rem;
     font-weight: 600;
   }
 
