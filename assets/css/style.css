@@ -413,7 +413,7 @@ html {
   margin: 2rem 2rem 0rem 0rem;
   padding-top: 0.5rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 550px) {
   .navbar .logo a {
     color: var(--secondary);
     font-weight: 800;
@@ -470,22 +470,22 @@ html {
   .slider .swiper .swiper-wrapper .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont {
     color: var(--white);
     position: absolute;
-    top: 30%;
+    top: 23%;
     left: 10%;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1.7rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
-    font-size: 2rem;
-    margin-bottom: 2.3rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
     line-height: 0.8rem;
   }
   .swiper-pagination-bullet-active {
@@ -508,10 +508,10 @@ html {
     display: flex;
   }
   .about .abtcont {
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .about .abtimg img {
-    height: 60vh;
+    height: 30vh;
     width: 30vw;
     border-radius: 0.5rem;
   }
@@ -519,11 +519,11 @@ html {
     color: var(--secondary);
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .about .abtcont h1 {
     color: var(--primary);
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-top: 0.7rem;
     font-weight: 800;
     word-spacing: 0.5rem;
@@ -531,7 +531,7 @@ html {
   .about .abtcont p {
     color: var(--primary);
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 0.5rem;
     margin-top: 1.7rem;
     margin-bottom: 1rem;
   }
@@ -631,34 +631,35 @@ html {
   .sign .container {
     background-image: url(/assets/img/signupimg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     width: 100%;
-    height: 100vh;
-    display: flex;
+    height: 100%;
+    display: block;
     gap: 2rem;
     align-items: center;
   }
 
   .sign .bcover {
-    background: var(--black);
-    background-color: black;
-    opacity: 80%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
+  background: none;
+  background-color: none;
+  opacity: 80%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
   }
   .sign .container .side1 ul li i {
     color: var(--secondary);
   }
   .sign .container .side1 {
-    width: 50%;
+    width: 100%;
     margin-left: 5%;
     z-index: 10;
   }
   .sign .container .signup {
-    width: 30%;
+    width: 70%;
     margin-right: 5%;
     z-index: 10;
   }
@@ -666,18 +667,18 @@ html {
     color: var(--secondary);
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .sign .container .side1 h1 {
     color: var(--white);
     margin: 1.5rem 0;
     font-weight: 700;
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
   .sign .container .side1 p {
     color: var(--white);
     margin: 2rem 0;
-    font-size: 1.2rem;
+    font-size: .8rem;
   }
   .sign .container .side1 span {
     color: var(--white);
