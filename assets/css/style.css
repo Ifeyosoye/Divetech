@@ -444,7 +444,7 @@ html {
 
   .linkbar .links ul li a {
     color: var(--primary);
-    margin-right: .4rem;
+    margin-right: .1rem;
     font-size: 1rem;
     font-weight: 600;
   }
