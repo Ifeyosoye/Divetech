@@ -510,15 +510,16 @@ html {
   /* about */
   .about .container {
     display: block;
+    text-align: center;
   }
   .about .abtcont {
-    margin-left: 1rem;
+    margin-left: 0;
   }
   .about .abtimg img {
-    height: 30vh;
-    width: 80%;
+    height: 40vh;
+    width: 90%;
     border-radius: 0.5rem;
-    margin: rem auto;
+    margin-bottom: 2rem;
   }
   .about .abtcont h4 {
     color: var(--secondary);
@@ -528,7 +529,7 @@ html {
   }
   .about .abtcont h1 {
     color: var(--primary);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 0.7rem;
     font-weight: 800;
     word-spacing: 0.5rem;
@@ -536,8 +537,8 @@ html {
   .about .abtcont p {
     color: var(--primary);
     font-weight: 300;
-    font-size: 0.5rem;
-    margin-top: 1.7rem;
+    font-size: 0.7rem;
+    margin-top: 1.2rem;
     margin-bottom: 1rem;
   }
   .about .abtcont button {
@@ -545,8 +546,8 @@ html {
     background-color: var(--secondary);
     color: var(--white);
     border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    font-size: 1.1rem;
+    padding: 0.3rem 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
