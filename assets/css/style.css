@@ -159,13 +159,13 @@ html {
 }
 .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
   font-size: 1.5rem;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
   font-size: 4.5rem;
   margin-bottom: 2.5rem;
-  width:62% ;
-  line-height: 1 ;
+  width: 62%;
+  line-height: 1;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--secondary);
@@ -415,7 +415,7 @@ html {
   margin: 2rem 2rem 0rem 0rem;
   padding-top: 0.5rem;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 390px) {
   .navbar {
     padding: 1rem 0rem;
   }
@@ -444,11 +444,11 @@ html {
 
   /* .linkbar .links ul li:last-child{
     /* margin-right: 0; */
-  
+
   .linkbar .links ul li a {
     color: var(--primary);
-    margin-right: .7rem;
-    font-size: .8rem;
+    margin-right: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-align: left;
   }
@@ -457,7 +457,7 @@ html {
   }
 
   .linkbar button {
-   display: none;
+    display: none;
   }
 
   /* Slider */
@@ -482,15 +482,15 @@ html {
     left: 10%;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h3 {
-    font-size: .75rem;
-    margin-bottom: .1rem;
-    word-spacing: .2rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.1rem;
+    word-spacing: 0.2rem;
   }
   .slider .swiper .swiper-wrapper .swiper-slide .scont h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-bottom: 1.5rem;
-    width: 90% ;
-    line-height: 1.3 ;
+    width: 90%;
+    line-height: 1.3;
   }
   .swiper-pagination-bullet-active {
     background-color: var(--secondary);
@@ -503,7 +503,7 @@ html {
     border-radius: 0.5rem;
     padding: 0.4rem 1.3rem;
     margin-right: none;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
 
@@ -526,7 +526,7 @@ html {
     color: var(--secondary);
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .about .abtcont h1 {
     color: var(--primary);
@@ -557,14 +557,14 @@ html {
     text-transform: uppercase;
     color: var(--secondary);
     letter-spacing: 0.3rem;
-    font-size: .85rem;
+    font-size: 0.85rem;
     text-align: center;
     margin-top: 3rem;
   }
   .subjects h1 {
     color: var(--primary);
     font-size: 1.45rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
     text-transform: capitalize;
@@ -610,7 +610,7 @@ html {
   .subjects .container {
     display: block;
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    gap: 0; 
+    gap: 0;
   }
 
   /* courses */
@@ -640,38 +640,38 @@ html {
     background-image: url(/assets/img/signupimg.jpg);
     background-repeat: no-repeat;
     /* background-size: cover; */
-    width: 90%  ;
+    width: 90%;
     height: 100%;
     display: block;
     gap: 2rem;
     align-items: center;
-    text-align: center;
+    text-align: none;
   }
 
   .sign .bcover {
-  background: none;
-  background-color: none;
-  opacity: 80%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  left: 0;
-}
+    background: black;
+    background-color: none;
+    opacity: 40%;
+    position: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 200;
   }
+
   .sign .container .side1 ul li i {
     color: var(--secondary);
+    font-size: 0.8rem;
   }
   .sign .container .side1 {
     width: 100%;
     margin-left: 5%;
     z-index: 10;
+    text-align: center;
+    margin-bottom: 4rem;
   }
-  .sign .container .signup {
-    width: 70%;
-    margin-right: 5%;
-    z-index: 10;
-  }
+
   .sign .container .side1 h3 {
     color: var(--secondary);
     text-transform: uppercase;
@@ -681,7 +681,7 @@ html {
   }
   .sign .container .side1 h1 {
     color: var(--white);
-    margin: 1.5rem 0;
+    margin: 1.5rem 1.5rem 0rem 0rem;
     font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
@@ -689,25 +689,33 @@ html {
   .sign .container .side1 p {
     color: var(--white);
     margin: 2rem 5% 10%;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 80%;
-
   }
   .sign .container .side1 span {
     color: var(--white);
     margin-left: 1rem;
   }
   .sign .container .side1 ul li {
-    font-size: 1rem;
-    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    padding-bottom: 0rem;
     text-align: left;
+  }
+  .sign .container .signup {
+    width: 75%;
+    margin: 0rem auto;
+    z-index: 10;
+    padding-bottom: 2rem;
+    text-align: none;
+    z-index: 10;
   }
   .sign .container .signup h1 {
     background-color: var(--white);
     color: var(--primary);
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
     border-radius: 1rem 1rem 0rem 0rem;
+    text-align: center;
   }
   .sign .container .signup form {
     background-color: var(--secondary);
@@ -716,23 +724,23 @@ html {
   }
   .sign .container .signup input {
     border-radius: 0.3rem;
-    width: 23vw;
-    height: 8vh;
+    width: 38vw;
+    height: 6vh;
     border: none;
-    text-align: left;
+    text-align: none;
   }
   .sign .container .signup select {
     border-radius: 0.3rem;
-    width: 23vw;
-    height: 8vh;
+    width: 38vw;
+    height: 6vh;
     border: none;
-    text-align: left;
+    text-align: none;
   }
   .sign .container .signup .f1 {
-    padding: 2rem 0rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
   .sign .container .signup .f2 {
-    padding: 0rem 0.5rem 2rem 2rem;
+    padding: 0rem 2rem 2rem 2rem;
   }
   .sign .container .signup .f3 {
     padding: 0rem 2rem 2rem 2rem;
@@ -741,14 +749,14 @@ html {
     background-color: var(--primary);
     border: none;
     border-radius: 0.5rem;
-    width: 23vw;
+    width: 38vw;
     height: 8vh;
     text-align: center;
-    padding: 0rem 0.5rem 2rem 2rem;
+    padding: 0rem 0rem 0rem 0rem;
     color: var(--white);
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin: 2rem 2rem 0rem 0rem;
-    padding-top: 0.5rem;
+    padding-top: 0rem;
   }
 }
